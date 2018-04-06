@@ -1,5 +1,4 @@
 <?php
-
 	if(isset($_POST["nome"])){
 
 		$arquivo = "clientes.xml";
@@ -27,5 +26,5 @@
 		
 	}
 		header("location: index.php");
-	
+
 ?>

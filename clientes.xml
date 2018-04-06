@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<clientes><cliente><nome>hugo</nome><email>hugo@gmail.com</email><senha>123</senha><cpf>123</cpf><saldo>10</saldo></cliente><cliente><nome>gabriel</nome><email>gg@gmail.com</email><senha>123</senha><cpf>12345</cpf><saldo>7</saldo></cliente></clientes>

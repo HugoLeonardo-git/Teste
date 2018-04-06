@@ -9,11 +9,12 @@
 		foreach($xml->cliente as $cliente){
 			if(str_replace(" ","",$cliente->email) == str_replace(" ","",$_POST["email"]) && str_replace(" ","",$cliente->senha) == str_replace(" ","",$_POST["senha"])){
 				$_SESSION["login"] = (string)$cliente->nome;
-				var_dump($_SESSION["login"]);
 				break;
 			}
 		}
 	}
+	
+	header("location: index.php");
 	
 		
 

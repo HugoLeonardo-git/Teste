@@ -31,7 +31,7 @@
 					Fazer saque
 					<input type = "number" name = "saque"/>
 				</label>
-				<br/>
+				
 				<input type = "submit" name="ok" value = "ok"/>
 			</form>
 				
@@ -40,7 +40,7 @@
 					Fazer depósito
 					<input type = "number" name = "deposito"/>
 				</label>
-				<br/>
+				
 				<input type = "submit" name="ok" value = "ok"/>
 				
 			</form>
@@ -48,7 +48,7 @@
 			<form action = "realiza_operacoes.php" method = "post">			
 				<label>
 					Tranferir
-					<input type = "number" name = "tranferencia"/>
+					<input type = "number" name = "transferencia"/>
 					Para
 					<select name = "recebedor">
 					
@@ -64,7 +64,7 @@
 					
 					</select>
 				</label>
-				<br/>
+				
 				<input type = "submit" name="ok" value = "ok"/>
 			
 			</form>

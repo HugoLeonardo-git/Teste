@@ -1,7 +1,7 @@
 <?php
 	include("cabecalho.php");
 	
-	$arquivo = "clientes.xml"
+	$arquivo = "clientes.xml";
 
 	
 	if(file_exists($arquivo)){
@@ -51,11 +51,13 @@
 					
 						<?php
 						
-							foreach($xml->cliente as $cliente){?>
+							foreach($xml->cliente as $cliente){ ?>
 								
 								<option><?=$cliente->nome;?>
 								
-							<?php}?>
+						<?php
+							}
+						?>
 					
 					</select>
 				</label>
@@ -63,9 +65,8 @@
 			
 			</form>
 			
-		<?php}
-		
-	}
+<?php
+		}
 
 ?>
 </html>

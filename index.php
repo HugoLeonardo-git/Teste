@@ -1,6 +1,6 @@
 <?php
 	include("cabecalho.php");
-
+	var_dump($_SESSION["login"]);
 	if(!isset($_SESSION["login"])){
 ?>
 

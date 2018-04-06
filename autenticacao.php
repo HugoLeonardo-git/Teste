@@ -7,13 +7,14 @@
 		$xml = simplexml_load_file($arquivo);
 		
 		foreach($xml->cliente as $cliente){
-			if($cliente->email == $_POST["email"] && $cliente->senha == $_POST["senha"]){
-				$_SESSION['login'] = $cliente->nome;
+			if(str_replace(" ","",$cliente->email) == str_replace(" ","",$_POST["email"]) && str_replace(" ","",$cliente->senha) == str_replace(" ","",$_POST["senha"])){
+				$_SESSION["login"] = (string)$cliente->nome;
+				var_dump($_SESSION["login"]);
 				break;
 			}
 		}
 	}
-	header("location: index.php");
+	
 		
 
 ?>

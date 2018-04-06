@@ -6,7 +6,7 @@
 		if(!file_exists("clientes.xml")){
 			$fp = fopen($arquivo,"w");
 			
-			$conteudo_inicial = '<?xml version = "1.0"?><clientes>cliente></cliente></clientes>';
+			$conteudo_inicial = '<?xml version = "1.0"?><clientes></clientes>';
 			
 			fwrite($fp,$conteudo_inicial);
 			

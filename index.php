@@ -4,7 +4,7 @@
 	if(!isset($_SESSION["login"])){
 ?>
 
-		<form action = "" method = "post" >
+		<form action = "autenticacao.php" method = "post" >
 		
 			<label>
 				Email:
@@ -23,7 +23,7 @@
 
 <?php
 	}else{
-		header("location: mostra_saldo.php");
+		header("location: mostra_cliente.php");
 	}
 
 ?>

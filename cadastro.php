@@ -1,7 +1,7 @@
 <html>
 	<body>
 		<h2>Cadastre um novo cliente</h2>
-		<form action = "recebe_cliente.php" method = "post">
+		<form action = "registra_cadastro.php" method = "post">
 			<label>
 				Nome:
 			<input type = "text" name = "nome">

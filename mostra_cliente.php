@@ -32,6 +32,7 @@
 					<input type = "number" name = "saque"/>
 				</label>
 				<br/>
+				<input type = "submit" name="ok" value = "ok"/>
 			</form>
 				
 			<form action = "realiza_operacoes.php" method = "post">	
@@ -40,6 +41,8 @@
 					<input type = "number" name = "deposito"/>
 				</label>
 				<br/>
+				<input type = "submit" name="ok" value = "ok"/>
+				
 			</form>
 			
 			<form action = "realiza_operacoes.php" method = "post">			
@@ -62,10 +65,13 @@
 					</select>
 				</label>
 				<br/>
+				<input type = "submit" name="ok" value = "ok"/>
 			
 			</form>
-			
+			<br />
+		<a href="sair.php">Sair</a>
 <?php
+
 		}
 
 ?>

@@ -1,4 +1,6 @@
 <?php
+	session_start();
+	
 	$arquivo = "clientes.xml";
 
 	$xml = simplexml_load_file($arquivo);
@@ -16,14 +18,18 @@
 					}
 				}
 			}
-		}
 		
 		$cliente->saldo -= $_POST["saque"];
 				$xml->asXML($arquivo);
 	}
 	else if(isset($_POST["deposito"])){
-		$cliente->saldo += $_POST["deposito"];
-				$xml->asXML($arquivo);
+		foreach($xml->cliente as $cliente){
+			if(str_replace(" ","",$cliente->nome) == str_replace(" ","",$_SESSION["login"])){
+				(int)$cliente->saldo += (int)$_POST["deposito"];
+				
+			}
+		}
+		$xml->asXML($arquivo);
 	}
 	else if(isset($_POST["transferencia"])){
 		foreach($xml->cliente as $cliente){
@@ -38,5 +44,5 @@
 		header("location: index.php");
 	}
 	
-	header("location: mostra_cliente.php")
+	header("location: mostra_cliente.php");
 ?>
